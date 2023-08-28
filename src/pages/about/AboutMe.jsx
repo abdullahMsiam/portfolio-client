@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
     return (
-        <div>
+        <div className='pb-4'>
             <p className='text-center mt-3 text-4xl mb-10'>- - | |  - -</p>
             <h1 className='text-center text-5xl font-bold'>ABOUT ME</h1>
 
@@ -42,8 +42,7 @@ const AboutMe = () => {
                         <h2 className='font-bold ms-2'>-- Familiar</h2>
                     </div>
                     <div className='border p-3 py-8 w-full rounded-md hover:bg-[#ffde29] hover:text-black pe-9 border-[#ffde29]'>
-                        <hs1 className='text-2xl font-bold'>Tailwind</hs1>
-                        <h2 className='font-bold ms-2'>-- Expertise</h2>
+                        <h1 className='text-2xl font-bold'>Tailwind</h1>
                         <h2 className='font-bold ms-2'>-- Expertise</h2>
                     </div>
 
