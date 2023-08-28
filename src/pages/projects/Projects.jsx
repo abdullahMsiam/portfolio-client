@@ -9,7 +9,7 @@ const Projects = () => {
         <div className='pb-9 mt-9'>
             <h1 className='text-center text-5xl font-bold pb-6'>--- My Works ---</h1>
             <div className='grid lg:grid-cols-3 gap-6 mx-auto'>
-                <div className="card card-side bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
+                <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
                     <div className=''><img className='h-full rounded-lg' src={img1} alt="" /></div>
                     <div className="card-body px-2">
                         <h2 className="card-title">Language Learning Institute!</h2>
@@ -21,7 +21,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card card-side bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
+                <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
                     <div className=''><img className='h-full rounded-lg' src={img2} alt="" /></div>
                     <div className="card-body px-2">
                         <h2 className="card-title">Toys Collection Site!</h2>
@@ -33,7 +33,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card card-side bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
+                <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
                     <div className=''><img className='h-full rounded-lg' src={img3} alt="" /></div>
                     <div className="card-body px-2">
                         <h2 className="card-title">All Master chef!</h2>
