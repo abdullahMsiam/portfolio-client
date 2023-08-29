@@ -4,12 +4,35 @@ import mongoImg from '../../assets/images/mongo.png'
 import expressImg from '../../assets/images/express.png'
 import nodeImg from '../../assets/images/nodejs.jpg'
 import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
 
 const Skills = () => {
     return (
         <div className='pb-8'>
-            <p className='text-center mt-9 text-4xl pb-10 text-[#ffde29]'> | |  <br /> | |</p>
-            <h1 className='text-center text-5xl font-bold'>My Expertise Zone</h1>
+            <div className='text-center mt-9 text-4xl pb-10 text-[#ffde29]'>
+                <Typewriter
+                    options={{
+                        strings: ['| |'],
+                        autoStart: true,
+                        pauseFor: (700),
+                        loop: (true),
+                        delay: 50,
+                        cursor: ('')
+                    }}
+                />
+                <br />
+                <Typewriter
+                    options={{
+                        strings: ['| |'],
+                        autoStart: true,
+                        pauseFor: (500),
+                        delay: 100,
+                        loop: (true),
+                        cursor: ('')
+                    }}
+                />
+            </div>
+            <h1 className='text-center text-3xl md:text-5xl font-bold'>---My Zone---</h1>
             <div>
                 <div className='grid md:grid-cols-2 justify-items-center gap-5 w-3/4 mx-auto mt-9'>
                     <div className="card md:w-96 shadow-xl image-full transition duration-500 transform  hover:scale-105">

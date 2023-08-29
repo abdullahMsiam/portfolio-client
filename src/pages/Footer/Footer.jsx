@@ -1,11 +1,36 @@
 import React from 'react';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
 
 const Footer = () => {
     return (
         <div>
-            <p className='text-center mt-3 text-4xl mb-14 text-[#ffde29]'>- - | | - -</p>
+            <div className='text-center mt-3 text-4xl mb-10 text-[#ffde29]'> <div>
+                <Typewriter
+                    options={{
+                        strings: ['--'],
+                        autoStart: true,
+                        pauseFor: (600),
+                        loop: (true),
+                        delay: 50,
+                        cursor: ('')
+                    }}
+                />
+            </div> <div>| |</div>
+                <div className='inline'>
+                    <Typewriter
+                        options={{
+                            strings: ['--'],
+                            autoStart: true,
+                            pauseFor: (500),
+                            loop: (true),
+                            delay: 100,
+                            cursor: ('')
+                        }}
+                    />
+                </div>
+            </div>
             <div className='pb-20'>
                 <footer className="footer p-10 bg-[#ffde29] text-black rounded-ee-full md:rounded-ss-full md:px-28 md:h-[180px] duration-300 hover:bg-opacity-80">
                     <div className='gap-0'>
