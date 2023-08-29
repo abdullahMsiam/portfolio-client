@@ -4,6 +4,7 @@ import img2 from '../../assets/images/toy.png'
 import img3 from '../../assets/images/chef.png'
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
+import Bounce from 'react-reveal/Bounce';
 
 const Projects = () => {
     return (
@@ -33,7 +34,11 @@ const Projects = () => {
                     />
                 </div>
             </div>
-            <h1 className='text-center text-3xl md:text-5xl font-bold pb-6'>---My Projects---</h1>
+            <div>
+                <Bounce top cascade>
+                    <h1 className='text-center text-3xl md:text-5xl font-bold pb-6'>---My Projects---</h1>
+                </Bounce>
+            </div>
             <div className='grid lg:grid-cols-3 gap-6 mx-auto'>
                 <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
                     <div className=''><img className='h-full rounded-lg' src={img1} alt="" /></div>

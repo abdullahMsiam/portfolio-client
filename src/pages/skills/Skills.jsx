@@ -5,6 +5,7 @@ import expressImg from '../../assets/images/express.png'
 import nodeImg from '../../assets/images/nodejs.jpg'
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
+import Bounce from 'react-reveal/Bounce';
 
 const Skills = () => {
     return (
@@ -32,38 +33,44 @@ const Skills = () => {
                     }}
                 />
             </div>
-            <h1 className='text-center text-3xl md:text-5xl font-bold'>---My Zone---</h1>
             <div>
-                <div className='grid md:grid-cols-2 justify-items-center gap-5 w-3/4 mx-auto mt-9'>
-                    <div className="card md:w-96 shadow-xl image-full transition duration-500 transform  hover:scale-105">
-                        <figure><img src={reactImg} alt="Shoes" /></figure>
-                        <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
-                            <h2 className="card-title">ReactJs</h2>
-                            <p>I am confident with ReactJs</p>
+                <Bounce top cascade>
+                    <h1 className='text-center text-3xl md:text-5xl font-bold'>--- My Zone ---</h1>
+                </Bounce>
+            </div>
+            <div>
+                <Bounce right cascade>
+                    <div className='grid md:grid-cols-2 justify-items-center gap-5 w-3/4 mx-auto mt-9'>
+                        <div className="card md:w-96 shadow-xl image-full transition duration-500 transform  hover:scale-105">
+                            <figure><img src={reactImg} alt="Shoes" /></figure>
+                            <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
+                                <h2 className="card-title">ReactJs</h2>
+                                <p>I am confident with ReactJs</p>
+                            </div>
+                        </div>
+                        <div className="card md:w-96 bg-neutral-800   shadow-xl image-full transition duration-500 transform  hover:scale-105">
+                            <figure><img src={mongoImg} alt="Shoes" /></figure>
+                            <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
+                                <h2 className="card-title">MongoDB</h2>
+                                <p>I am confident with MongoDB</p>
+                            </div>
+                        </div>
+                        <div className="card md:w-96 bg-neutral-800   shadow-xl image-full transition duration-500 transform  hover:scale-105">
+                            <figure><img src={expressImg} alt="Shoes" /></figure>
+                            <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
+                                <h2 className="card-title">Express</h2>
+                                <p>I am confident with Express!</p>
+                            </div>
+                        </div>
+                        <div className="card md:w-96 bg-neutral-800   shadow-xl image-full transition duration-500 transform  hover:scale-105">
+                            <figure><img src={nodeImg} alt="Shoes" /></figure>
+                            <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
+                                <h2 className="card-title">NodeJs</h2>
+                                <p>I am confident with NodeJs</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="card md:w-96 bg-neutral-800   shadow-xl image-full transition duration-500 transform  hover:scale-105">
-                        <figure><img src={mongoImg} alt="Shoes" /></figure>
-                        <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
-                            <h2 className="card-title">MongoDB</h2>
-                            <p>I am confident with MongoDB</p>
-                        </div>
-                    </div>
-                    <div className="card md:w-96 bg-neutral-800   shadow-xl image-full transition duration-500 transform  hover:scale-105">
-                        <figure><img src={expressImg} alt="Shoes" /></figure>
-                        <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
-                            <h2 className="card-title">Express</h2>
-                            <p>I am confident with Express!</p>
-                        </div>
-                    </div>
-                    <div className="card md:w-96 bg-neutral-800   shadow-xl image-full transition duration-500 transform  hover:scale-105">
-                        <figure><img src={nodeImg} alt="Shoes" /></figure>
-                        <div className="card-body hover:bg-neutral-700 hover:bg-opacity-20 hover:rounded-xl">
-                            <h2 className="card-title">NodeJs</h2>
-                            <p>I am confident with NodeJs</p>
-                        </div>
-                    </div>
-                </div>
+                </Bounce>
             </div>
 
         </div>

@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import Typewriter from 'typewriter-effect';
 import emailjs from '@emailjs/browser';
+import Bounce from 'react-reveal/Bounce';
+import maiImg from '../../assets/images/mailmage.jpg';
 
 const MailSend = () => {
 
@@ -40,15 +42,25 @@ const MailSend = () => {
                 />
             </div>
 
-            <h1 className='text-center text-3xl md:text-5xl font-bold mb-4'>--- Get Me ---</h1>
+            <div>
+                <Bounce top cascade>
+                    <h1 className='text-center text-3xl md:text-5xl font-bold mb-4'>--- Your Mail ---</h1>
+                </Bounce>
+            </div>
 
             <div className=' mx-auto'>
-                <div className="hero bg-neutral-800 rounded-lg transition duration-500 hover:bg-neutral-900 ">
+                <div className="hero bg-neutral-900 rounded-lg transition duration-500 ">
                     <div className="hero-content flex-col p-0 md:p-5 lg:flex-row w-11/12 md:w-full">
                         <div className="text-center lg:text-left">
                             <div className='hidden md:block'>
-                                <h1 className="text-5xl font-bold">connect With Me...</h1>
-                                <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <div>
+                                    <Bounce left cascade>
+                                        <h1 className="text-4xl font-bold">Feel free to message</h1>
+                                    </Bounce>
+                                </div>
+                                <Bounce >
+                                    <img className='w-11/12 mt-6 h-[400px] rounded-3xl duration-500' src={maiImg} alt="" />
+                                </Bounce>
                             </div>
                         </div>
                         <div className="card flex-shrink-0 w-11/12 md:w-1/2  bg-neutral-900">
