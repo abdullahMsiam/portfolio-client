@@ -9,7 +9,7 @@ import Bounce from 'react-reveal/Bounce';
 const Projects = () => {
     return (
         <div className='pb-9 mt-9'>
-            <div className='text-center mt-3 text-4xl mb-10 text-[#ffde29]'> <div>
+            <div className='text-center mt-3 text-2xl md:text-4xl mb-10 text-[#ffde29]'> <div>
                 <Typewriter
                     options={{
                         strings: ['--'],
@@ -35,8 +35,8 @@ const Projects = () => {
                 </div>
             </div>
             <div>
-                <Bounce top cascade>
-                    <h1 className='text-center text-3xl md:text-5xl font-bold pb-6'>---My Projects---</h1>
+                <Bounce left cascade>
+                    <h1 className='text-center text-3xl md:text-5xl font-bold pb-6'>--- My Projects ---</h1>
                 </Bounce>
             </div>
             <div className='grid lg:grid-cols-3 gap-6 mx-auto'>

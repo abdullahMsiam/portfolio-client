@@ -20,7 +20,7 @@ const MailSend = () => {
     }
     return (
         <div>
-            <div className='text-center text-[#ffde29] mt-3 text-4xl mb-10'>
+            <div className='text-center text-[#ffde29] mt-3 text-2xl md:text-4xl mb-10'>
                 <Typewriter
                     options={{
                         strings: ['| |'],
@@ -43,8 +43,8 @@ const MailSend = () => {
             </div>
 
             <div>
-                <Bounce top cascade>
-                    <h1 className='text-center text-3xl md:text-5xl font-bold mb-4'>--- Your Mail ---</h1>
+                <Bounce left cascade>
+                    <h1 className='text-center text-3xl md:text-5xl font-bold mb-4'>--- Send Message ---</h1>
                 </Bounce>
             </div>
 
@@ -54,7 +54,7 @@ const MailSend = () => {
                         <div className="text-center lg:text-left">
                             <div className='hidden md:block'>
                                 <div>
-                                    <Bounce left cascade>
+                                    <Bounce right cascade>
                                         <h1 className="text-4xl font-bold">Feel free to message</h1>
                                     </Bounce>
                                 </div>

@@ -7,7 +7,7 @@ import Bounce from 'react-reveal/Bounce';
 const Footer = () => {
     return (
         <div>
-            <div className='text-center mt-3 text-4xl mb-10 text-[#ffde29]'> <div>
+            <div className='text-center mt-3 text-2xl md:text-4xl mb-10 text-[#ffde29]'> <div>
                 <Typewriter
                     options={{
                         strings: ['--'],

@@ -10,7 +10,7 @@ import Bounce from 'react-reveal/Bounce';
 const Skills = () => {
     return (
         <div className='pb-8'>
-            <div className='text-center mt-9 text-4xl pb-10 text-[#ffde29]'>
+            <div className='text-center mt-9 text-2xl md:text-4xl pb-10 text-[#ffde29]'>
                 <Typewriter
                     options={{
                         strings: ['| |'],
@@ -34,7 +34,7 @@ const Skills = () => {
                 />
             </div>
             <div>
-                <Bounce top cascade>
+                <Bounce left cascade>
                     <h1 className='text-center text-3xl md:text-5xl font-bold'>--- My Zone ---</h1>
                 </Bounce>
             </div>

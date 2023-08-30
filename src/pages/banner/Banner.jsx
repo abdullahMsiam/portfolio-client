@@ -10,7 +10,7 @@ const Banner = () => {
                 <div className='w-1/3 mx-auto'>
                     <img className=' md:h-[400px] rounded-full border-t-8 border-[#ffde29] md:rounded-3xl md:border-l-8 md:border-[#ffde29]' src={myImg} alt="" />
                 </div>
-                <div className='my-auto w-4/5 mx-auto'>
+                <div className='my-auto w-11/12 md:w-4/5 mx-auto'>
                     <Bounce left cascade>
                         <h1 className='text-2xl md:text-6xl font-normal md:font-bold text-[#ffde29]'>
                             Abdullah Muhammad Siam

@@ -12,13 +12,13 @@ const PortNav = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                             <ul tabIndex={0} className="menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-neutral-700 bg-opacity-50 rounded-box w-28">
-                                <li className='font-bold rounded-full bg-neutral-900 border-[#ffde29] focus:bg-[#ffde29] focus:rounded-full focus:text-black text-start'>
+                                <li className='font-bold rounded-full bg-neutral-900 border-[#ffde29] hover:bg-[#ffde29] hover:rounded-full hover:text-black text-start'>
                                     <Link to="/">Home</Link>
                                 </li>
-                                <li className='mt-2 font-bold rounded-full bg-neutral-900 border-[#ffde29] focus:bg-[#ffde29] focus:rounded-full focus:text-black text-start'>
+                                <li className='mt-2 font-bold rounded-full bg-neutral-900 border-[#ffde29] hover:bg-[#ffde29] hover:rounded-full hover:text-black text-start'>
                                     <Link to="/all-projects">Works</Link>
                                 </li>
-                                <li className=' mt-2 font-bold rounded-full bg-neutral-900 border-[#ffde29] focus:bg-[#ffde29] focus:rounded-full focus:text-black text-start'>
+                                <li className=' mt-2 font-bold rounded-full bg-neutral-900 border-[#ffde29] hover:bg-[#ffde29]hover:rounded-full hover:text-black text-start'>
                                     <Link to="/blogs" className=''>Blogs</Link>
                                 </li>
                             </ul>
@@ -27,6 +27,9 @@ const PortNav = () => {
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className=" menu-horizontal px-1">
+                            <li className='hover:text-orange-400 text-xl font-bold ms-5'>
+                                <Link to="/">Home</Link>
+                            </li>
                             <li className='hover:text-orange-400 text-xl font-bold ms-5'>
                                 <Link to="/all-projects">Projects</Link>
                             </li>
