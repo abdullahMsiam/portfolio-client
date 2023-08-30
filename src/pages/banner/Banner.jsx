@@ -27,7 +27,7 @@ const Banner = () => {
                             }}
                         />
                     </span> </h1>
-                    <p className='mt-2 text-lg text-justify w-full mx-auto'>Hello dear, I am MERN stack developer for any region. All types of project done in remotely. You can hire me from your place for my stack related project. Maybe I can learn  important information or knowledge to complete your project.</p>
+                    <p className='mt-2 text-lg text-justify w-full mx-auto'>Hello, I am a web developer available to work from any region. I have skill completing various types of projects remotely. Whether you're looking for someone to handle a MERN stack-related project, you can hire me with confidence. I am also open to learning any important information or acquiring the knowledge to work with you.</p>
                 </div>
             </div>
         </div>
