@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <PortNav></PortNav>
-            <div className='max-w-6xl mx-auto'>
+            <div className='mx-auto'>
                 <Banner></Banner>
                 <AboutMe></AboutMe>
                 <Skills></Skills>

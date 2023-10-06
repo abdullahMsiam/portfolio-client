@@ -1,10 +1,13 @@
 import React from 'react';
-import img1 from '../../assets/images/language.png'
-import img2 from '../../assets/images/toy.png'
-import img3 from '../../assets/images/chef.png'
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Bounce from 'react-reveal/Bounce';
+import './style.css'
+import img1 from '../../assets/web-photo/school.png'
+import img2 from '../../assets/web-photo/toys.png'
+import img3 from '../../assets/web-photo/chefs.png'
+import { FaArrowAltCircleUp, FaRegArrowAltCircleRight } from 'react-icons/fa';
+
 
 const Projects = () => {
     return (
@@ -34,54 +37,141 @@ const Projects = () => {
                     />
                 </div>
             </div>
-            <div>
-                <Bounce left cascade>
-                    <h1 className='text-center text-3xl md:text-5xl font-bold pb-6'>--- My Projects ---</h1>
-                </Bounce>
-            </div>
-            <div className='grid lg:grid-cols-3 gap-6 mx-auto'>
-                <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
-                    <div className=''><img className='h-full rounded-lg' src={img1} alt="" /></div>
-                    <div className="card-body px-2">
-                        <h2 className="card-title">Language Learning Institute!</h2>
-                        <p>A full MERN stack project by Abdullah M.S.</p>
-                        <div className="card-actions justify-start">
-                            <Link to="https://language-school-3ec51.web.app/">
-                                <button className="btn btn-sm bg-neutral-800 border-[#ffde29] text-white hover:text-[#ffde29] hover:bg-neutral-900 rounded-full hover:border-[#ffde29]">Live site--</button>
-                            </Link>
+            <div className=''>
+                <div>
+                    <Bounce left cascade>
+                        <h1 className='text-center text-3xl md:text-5xl font-bold pb-6'>--- My Projects ---</h1>
+                    </Bounce>
+                </div>
+                <div className='bg-neutral-900 bg-opacity-50'>
+                    <div className='max-w-6xl mx-auto flex flex-col md:flex-row gap-7 content-center justify-center p-3 py-8'>
+                        <div className='image-wrap ms-3'>
+                            <img className='rounded-lg' src={img1} alt="" />
+                        </div>
+                        <div>
+                            <Bounce right cascade>
+                                <div>
+                                    <h1 className='text-4xl font-bold'>Language Learning Institute</h1>
+                                </div>
+                                <div>
+                                    <h2 className='text-3xl mt-3 mb-1 font-bold'>Features</h2>
+                                    <ol className='text-xl font-medium'>
+                                        <ul> 1. Login Authentication with gmail</ul>
+                                        <ul> 2. Enrolled any course saved in database.</ul>
+                                        <ul> 2. Users has different dashboard.</ul>
+                                        <ul> 4. Feels likes a web application.</ul>
+                                    </ol>
+                                    <p className='mt-2'> <span className='text-xl font-semibold'>Technology:</span> <span>ReactJS, MongoDB, Firebase, TailwindCSS, ExpressJS for Backend</span> </p>
+                                </div>
+                                <div className='mt-5 flex gap-3'>
+                                    <div>
+                                        <Link to="https://language-school-3ec51.web.app/">
+                                            <button className='btn btn-outline btn-warning flex'>Live Site <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="https://github.com/abdullahMsiam/language-school-client">
+                                            <button className='btn btn-outline btn-warning flex'>Github Client <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="https://github.com/abdullahMsiam/language-school-server">
+                                            <button className='btn btn-outline btn-warning flex'>Github Server <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Bounce>
                         </div>
                     </div>
                 </div>
-                <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
-                    <div className=''><img className='h-full rounded-lg' src={img2} alt="" /></div>
-                    <div className="card-body px-2">
-                        <h2 className="card-title">Toys Collection Site!</h2>
-                        <p>A full MERN stack project by Abdullah M.S.</p>
-                        <div className="card-actions justify-start">
-                            <Link to="https://ams-toy.web.app/">
-                                <button className=" btn btn-sm bg-neutral-800 border-[#ffde29] text-white hover:text-[#ffde29] hover:bg-neutral-900 rounded-full hover:border-[#ffde29]">Live site--</button>
-                            </Link>
+                <div className='mt-6'>
+                    <div className='max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-7 content-center justify-center p-3 py-8'>
+                        <div className='image-wrap ms-3'>
+                            <img className='rounded-lg' src={img2} alt="" />
                         </div>
-                    </div>
-                </div>
-                <div className="card card-side w-11/12 mx-auto bg-neutral-900 bg-opacity-50 shadow-xl h-[250px] hover:bg-[#ffdf297f]  transition duration-500 hover:text-black transform  hover:scale-105 overflow-hidden">
-                    <div className=''><img className='h-full rounded-lg' src={img3} alt="" /></div>
-                    <div className="card-body px-2">
-                        <h2 className="card-title">All Master chef!</h2>
-                        <p>A full MERN stack project by Abdullah M.S.</p>
-                        <div className="card-actions justify-start">
-                            <Link to="https://chef-master-e0b16.web.app/">
-                                <button className="btn btn-sm bg-neutral-800 border-[#ffde29] text-white hover:text-[#ffde29] hover:bg-neutral-900 rounded-full hover:border-[#ffde29]">Live site--</button>
-                            </Link>
+                        <div>
+                            <Bounce left cascade>
+                                <div>
+                                    <h1 className='text-4xl font-bold'>Car Toys Platform</h1>
+                                </div>
+                                <div>
+                                    <h2 className='text-3xl mt-3 mb-1 font-bold'>Features</h2>
+                                    <ol className='text-xl font-medium'>
+                                        <ul> 1. Login Authentication with mail</ul>
+                                        <ul> 2. User Can see their toys.</ul>
+                                        <ul> 2. New toys can be added by users.</ul>
+                                        <ul> 4. Feels likes a web application.</ul>
+                                    </ol>
+                                    <p className='mt-2'> <span className='text-xl font-semibold'>Technology:</span> <span>ReactJS, MongoDB, Firebase, TailwindCSS, ExpressJS for Backend</span> </p>
+                                </div>
+                                <div className='mt-5 flex gap-1 md:gap-3'>
+                                    <div>
+                                        <Link to="https://ams-toy.web.app/">
+                                            <button className='btn btn-outline btn-warning flex'>Live Site <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="https://github.com/abdullahMsiam/ams-toy-client">
+                                            <button className='btn btn-outline btn-warning flex'>Github Client <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="https://github.com/abdullahMsiam/ams-toy-server">
+                                            <button className='btn btn-outline btn-warning flex'>Github Server <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Bounce>
                         </div>
                     </div>
                 </div>
 
-            </div>
-            <div className='text-center mt-6'>
-                <Link>
-                    <button className='btn text-xs border-[#ffde29] duration-500 hover:bg-[#ffde29] hover:text-black hover:scale-105 focus:scale-95 rounded-full bg-neutral-900 text-white '>--More Projects--</button>
-                </Link>
+                <div className='bg-neutral-900 bg-opacity-50 mt-6'>
+                    <div className='max-w-6xl mx-auto flex flex-col md:flex-row gap-7 content-center justify-center p-3 py-8'>
+                        <div className='image-wrap ms-3'>
+                            <img className='rounded-lg' src={img3} alt="" />
+                        </div>
+                        <div>
+                            <Bounce right cascade>
+                                <div>
+                                    <h1 className='text-4xl font-bold'>Master Chefs Website</h1>
+                                </div>
+                                <div>
+                                    <h2 className='text-3xl mt-3 mb-1 font-bold'>Features</h2>
+                                    <ol className='text-xl font-medium'>
+                                        <ul> 1. Their available master chefs from anywhere.</ul>
+                                        <ul> 2. User can explore their favorite chef.</ul>
+                                        <ul> 2. Chefs bio can available when user logged in.</ul>
+                                        <ul> 4. Feels likes a web application.</ul>
+                                    </ol>
+                                    <p className='mt-2'> <span className='text-xl font-semibold'>Technology:</span> <span>ReactJS, MongoDB, Firebase, Bootstrap, ExpressJS for Backend</span> </p>
+                                </div>
+                                <div className='mt-5 flex gap-3'>
+                                    <div>
+                                        <Link to="https://chef-master-e0b16.web.app/">
+                                            <button className='btn btn-outline btn-warning flex'>Live Site <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="https://github.com/abdullahMsiam/chef-master">
+                                            <button className='btn btn-outline btn-warning flex'>Github Client <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="https://github.com/abdullahMsiam/chef-master-server">
+                                            <button className='btn btn-outline btn-warning flex'>Github Server <FaRegArrowAltCircleRight></FaRegArrowAltCircleRight> </button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Bounce>
+                        </div>
+                    </div>
+                </div>
+                <div className='text-center mt-6'>
+                    <Link>
+                        <button className='btn text-xs border-[#ffde29] duration-500 hover:bg-[#ffde29] hover:text-black hover:scale-105 focus:scale-95 rounded-full bg-neutral-900 text-white '>--More Projects--</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

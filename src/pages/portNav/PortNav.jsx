@@ -23,9 +23,9 @@ const PortNav = () => {
                                 </li>
                             </ul>
                         </div>
-                        <Link to="/" className="btn btn-ghost normal-case text-xl md:px-20">Abdullah M.S.</Link>
+                        <Link to="/" className="btn btn-ghost normal-case text-xl md:px-20">Abdullah Muhammad Siam</Link>
                     </div>
-                    <div className="navbar-center hidden lg:flex">
+                    <div className="navbar-end hidden lg:flex me-24">
                         <ul className=" menu-horizontal px-1">
                             <li className='hover:text-orange-400 text-xl font-bold ms-5'>
                                 <Link to="/">Home</Link>

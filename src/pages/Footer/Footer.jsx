@@ -47,7 +47,7 @@ const Footer = () => {
                                 <p className='text-xl font-bold'>Find me from--</p>
                                 <div className="grid grid-flow-col gap-5 text-xl">
                                     <div className='btn btn-circle bg-neutral-800 text-white duration-500 hover:scale-110 hover:bg-neutral-800'>
-                                        <Link to="https://www.linkedin.com/in/abdullahms055/"><FaLinkedinIn></FaLinkedinIn></Link>
+                                        <Link to="https://www.linkedin.com/in/abdullahms055"><FaLinkedinIn></FaLinkedinIn></Link>
                                     </div>
                                     <div className='btn btn-circle bg-neutral-800 text-white duration-500 hover:scale-110 hover:bg-neutral-800'>
                                         <Link to="https://github.com/abdullahMsiam"><FaGithub></FaGithub> </Link>

@@ -1,12 +1,15 @@
 import React from 'react';
 import PortNav from '../portNav/PortNav';
+import Projects from '../projects/Projects';
+import Footer from '../Footer/Footer';
 
 const AllProjects = () => {
     return (
         <div>
             <div className='text-center'>
                 <PortNav></PortNav>
-                <p className='py-36'>Under construction............</p>
+                <Projects></Projects>
+                <Footer></Footer>
             </div>
         </div>
     );

@@ -49,7 +49,7 @@ const MailSend = () => {
             </div>
 
             <div className=' mx-auto'>
-                <div className="hero bg-neutral-900 rounded-lg transition duration-500 ">
+                <div className="hero bg-neutral-900 bg-opacity-50 rounded-lg transition duration-500 ">
                     <div className="hero-content flex-col p-0 md:p-5 lg:flex-row w-11/12 md:w-full">
                         <div className="text-center lg:text-left">
                             <div className='hidden md:block'>
